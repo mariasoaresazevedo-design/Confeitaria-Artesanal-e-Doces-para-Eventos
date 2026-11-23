@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vagas | Confeitaria Artesanal</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #fffaf5;
+    color: #49352e;
+}
+
+header {
+    background: #713f43;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+nav {
+    background: #f0ded4;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #713f43;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f4dcd1, #fff5e9);
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #713f43;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    background: #713f43;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #a66b68;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+section h2 {
+    color: #713f43;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #00000010;
+    border-bottom: 4px solid #c58e83;
+}
+
+.card h3 {
+    color: #713f43;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.vaga {
+    background: #f4e7df;
+    border-radius: 20px;
+    padding: 35px;
+}
+
+ul {
+    margin: 20px 0 20px 25px;
+    line-height: 2;
+}
+
+.inscricao {
+    background: #713f43;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.inscricao h2 {
+    color: white;
+}
+
+.inscricao p {
+    margin-bottom: 25px;
+}
+
+footer {
+    background: #432b2c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+@media(max-width: 600px) {
+    .hero h2 {
+        font-size: 31px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍰 Doce Encanto</h1>
+    <p>Confeitaria Artesanal & Doces para Eventos</p>
+</header>
+
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#vaga">Vaga</a>
+    <a href="#requisitos">Requisitos</a>
+    <a href="#contato">Inscreva-se</a>
+</nav>
+
+<div class="hero" id="inicio">
+    <div class="hero-content">
+        <h2>Transforme talento em doces momentos!</h2>
+        <p>
+            Estamos em busca de pessoas criativas e apaixonadas
+            por confeitaria artesanal para fazer parte da nossa equipe.
+            Venha transformar ingredientes em experiências inesquecíveis!
+        </p>
+        <a href="#contato" class="botao">Quero fazer parte da equipe</a>
+    </div>
+</div>
+
+<section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>
+        A Doce Encanto é especializada em confeitaria artesanal,
+        produzindo bolos, brigadeiros, doces finos e sobremesas
+        personalizadas para casamentos, aniversários e eventos especiais.
+        Nosso compromisso é oferecer qualidade, criatividade e carinho
+        em cada detalhe.
+    </p>
+</section>
+
+<section id="vaga">
+    <h2>Oportunidade de Emprego</h2>
+
+    <div class="vaga">
+        <h3>🍓 Auxiliar de Confeitaria Artesanal</h3>
+        <p>
+            Procuramos profissionais dedicados, organizados e apaixonados
+            pelo universo dos doces para integrar nossa equipe.
+        </p>
+
+        <ul>
+            <li>Auxiliar na produção de bolos e doces artesanais;</li>
+            <li>Preparar brigadeiros, recheios e sobremesas;</li>
+            <li>Decorar e finalizar doces para eventos;</li>
+            <li>Organizar materiais e utensílios;</li>
+            <li>Manter a higiene e organização do ambiente;</li>
+            <li>Contribuir com ideias criativas para novas receitas.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="requisitos">
+    <h2>O que buscamos?</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🎂 Criatividade</h3>
+            <p>Interesse por decoração de bolos e criação de doces personalizados.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧁 Organização</h3>
+            <p>Capacidade de manter o ambiente limpo e organizado.</p>
+        </div>
+
+        <div class="card">
+            <h3>🍫 Dedicação</h3>
+            <p>Comprometimento, responsabilidade e vontade de aprender.</p>
+        </div>
+
+        <div class="card">
+            <h3>❤️ Paixão por doces</h3>
+            <p>Gostar de confeitaria e ter atenção aos detalhes.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>O que oferecemos?</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>✨ Ambiente acolhedor</h3>
+            <p>Equipe colaborativa e espaço para desenvolver habilidades.</p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Aprendizado</h3>
+            <p>Oportunidade de crescimento profissional na confeitaria.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎉 Experiência</h3>
+            <p>Participação na produção de doces para eventos especiais.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <div class="inscricao">
+        <h2>Faça parte da nossa equipe!</h2>
+        <p>
+            Se você ama confeitaria e deseja trabalhar conosco,
+            entre em contato e envie seu currículo.
+        </p>
+
+        <a class="botao"
+           href="https://wa.me/5500000000000?text=Olá!%20Tenho%20interesse%20na%20vaga%20de%20Auxiliar%20de%20Confeitaria."
+           target="_blank">
+            Enviar currículo pelo WhatsApp
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Doce Encanto - Confeitaria Artesanal</p>
+    <p>Feito com ❤️ e muito açúcar!</p>
+</footer>
+
+</body>
+</html>
